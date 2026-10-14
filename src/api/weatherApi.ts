@@ -31,7 +31,7 @@ export const fetchWeatherByCoordinates = async (lat: number, lon: number) => {
   return {
     weather: weatherRes.data,
     forecast: forcastRes.data.list,
-    airPollution: apiRes.data.list[0],
+    aqi: apiRes.data.list[0],
   };
 };
 
